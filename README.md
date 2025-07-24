@@ -14,25 +14,21 @@ Bu proje, No Surrender Studio için hazırlanmış bir case study çalışmasıd
 ## 💻 **Kullanılan Teknolojiler**
 
 ### **Frontend**
-- **Next.js 14+** - App Router ile modern React framework
-- **TypeScript** - Type safety ve geliştirici deneyimi için
-- **TailwindCSS** - Utility-first CSS framework ile responsive tasarım
-- **Lucide React** - Modern icon kütüphanesi
+- **Next.js 14+**  
+- **TypeScript**  
+- **TailwindCSS** 
+- **Lucide React** 
 
 ### **State Management**
-- **React Hooks** - useState, useEffect ile local state yönetimi
-- **localStorage API** - Client-side data persistence
-- **Custom Storage Utility** - Game state ve energy regeneration logic
+- **React Hooks**
+- **localStorage API**
+
 
 ### **Backend/API**
 - **Next.js API Routes** - Server-side logic ve validation
 - **Rate Limiting** - IP bazlı istək sınırlandırması
 - **Error Handling** - Kapsamlı hata yönetimi
 
-### **Development Tools**
-- **Turbopack** - Hızlı development build tool
-- **ESLint** - Code quality ve consistency
-- **Git** - Version control ile özellik bazlı commit'ler
 
 ## ✨ **Getirilen Yenilikler**
 
