@@ -226,15 +226,23 @@ flex-col lg:flex-row /* Mobile vertical, desktop horizontal */
 
 ### Ana Oyun Ekranı
 *[Screenshot placeholder - Ana sayfa ile oyun arayüzü]*
+<img width="1919" height="722" alt="image" src="https://github.com/user-attachments/assets/75ec0e71-c852-40f8-ac24-ca884d7f6cec" />
+<img width="1918" height="804" alt="image" src="https://github.com/user-attachments/assets/f8841a0c-5d26-4d06-bcb6-c1f78b8df847" />
+
+
+
 
 ### Item Showcase Sayfası  
 *[Screenshot placeholder - Kategorize item listesi]*
+<img width="1920" height="609" alt="image" src="https://github.com/user-attachments/assets/9c36c6c5-0fc2-4b39-b3a3-b359d0d56e53" />
+<img width="1887" height="813" alt="image" src="https://github.com/user-attachments/assets/f2e41926-4c37-4bee-82e2-dea888a501a0" />
 
-### Mobil Responsive
-*[Screenshot placeholder - Mobil görünüm]*
 
 ### Batch Upgrade Sistemi
 *[Screenshot placeholder - 50x upgrade butonu]*
+<img width="241" height="309" alt="image" src="https://github.com/user-attachments/assets/e9efaf01-41ae-44d0-bf8d-3bc6ec37cbdf" />
+<img width="261" height="289" alt="image" src="https://github.com/user-attachments/assets/05ac0804-0342-4ff8-b7ac-6248b5349327" />
+
 
 ## 🚀 **Kurulum ve Çalıştırma**
 
