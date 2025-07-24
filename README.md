@@ -1,17 +1,17 @@
 
-# 🎮 Card Upgrade Game - No Surrender Studio Case Study
+#  Card Upgrade Game - No Surrender Studio Case Study
 
-🔗 **Demo:** [https://card-upgrade-game.vercel.app/](https://card-upgrade-game.vercel.app/)
+ **Demo:** [https://card-upgrade-game.vercel.app/](https://card-upgrade-game.vercel.app/)
 
 > **Full-Stack Developer Case Study Project**
 > 
 > Modern web teknolojileri kullanarak geliştirilmiş kapsamlı kart yükseltme oyunu. Batch processing, persistent data storage ve real-time energy regeneration özellikleri ile kullanıcı deneyimini optimize eden teknik çözümler sunmaktadır.
 
-## 🚀 **Proje Hakkında**
+##  **Proje Hakkında**
 
 Bu proje, No Surrender Studio için hazırlanmış bir case study çalışmasıdır. Oyun geliştirme süreçlerinde karşılaşılan teknik problemlere modern çözümler getirerek, full-stack geliştirici yetkinliklerini sergiler.
 
-## 💻 **Kullanılan Teknolojiler**
+##  **Kullanılan Teknolojiler**
 
 ### **Frontend**
 - **Next.js 14+**  
@@ -30,7 +30,7 @@ Bu proje, No Surrender Studio için hazırlanmış bir case study çalışmasıd
 - **Error Handling** - Kapsamlı hata yönetimi
 
 
-## ✨ **Getirilen Yenilikler**
+##  **Getirilen Yenilikler**
 
 ### **1. Batch Processing Sistemi - "50 Tıklama" Probleminin Çözümü**
 
@@ -116,7 +116,7 @@ useEffect(() => {
 - ✅ Better user retention
 - ✅ Fair gameplay mechanics
 
-## �️ **Dosya Yapısı**
+##  **Dosya Yapısı**
 
 ```
 src/
@@ -144,7 +144,7 @@ src/
     └── utils.ts          # Tailwind className merger
 ```
 
-## 🎯 **Kritik Kod Açıklamaları**
+##  **Kritik Kod Açıklamaları**
 
 ### **Energy Regeneration Logic**
 ```typescript
@@ -203,7 +203,7 @@ function checkRateLimit(clientId: string): boolean {
 }
 ```
 
-## 📱 **Responsive Design**
+##  **Responsive Design**
 
 Mobil-first yaklaşım ile tüm ekran boyutlarında optimize edilmiş:
 
@@ -218,7 +218,7 @@ xl:grid-cols-4       /* Large: 4 kart */
 flex-col lg:flex-row /* Mobile vertical, desktop horizontal */
 ```
 
-## � **Ekran Görüntüleri**
+##  **Ekran Görüntüleri**
 
 ### Ana Oyun Ekranı
 
@@ -240,7 +240,7 @@ flex-col lg:flex-row /* Mobile vertical, desktop horizontal */
 <img width="261" height="289" alt="image" src="https://github.com/user-attachments/assets/05ac0804-0342-4ff8-b7ac-6248b5349327" />
 
 
-## 🚀 **Kurulum ve Çalıştırma**
+##  **Kurulum ve Çalıştırma**
 
 ```bash
 # Repository'yi klonla
@@ -257,13 +257,5 @@ npm run dev
 npm run build
 npm start
 ```
-
-## 🎯 **Case Study Hedefleri**
-
-✅ **Performance Optimization** - Batch processing ile API çağrı optimizasyonu  
-✅ **Data Persistence** - localStorage ile zero data loss  
-✅ **User Experience** - Responsive design ve intuitive UI  
-✅ **Code Quality** - TypeScript, proper architecture, clean code  
-✅ **Scalability** - MongoDB migration ready structure  
 
 
