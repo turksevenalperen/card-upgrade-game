@@ -32,7 +32,7 @@ Bu proje, No Surrender Studio için hazırlanmış bir case study çalışmasıd
 
 ##  **Getirilen Yenilikler**
 
-### **1. Batch Processing Sistemi - "50 Tıklama" Probleminin Çözümü**
+### **1. Batch Processing Sistemi - "50 kere Tıklama" Probleminin Çözümü**
 Tek Tek Tıklama Probleminin Teknik Çözümü
 Problem:
 Kullanıcılar bir kartı seviye atlatmak için 50 kez “Geliştir” butonuna tıklamak zorunda kalıyordu. Bu, hem kullanıcı deneyimini olumsuz etkiliyor hem de sunucuya gereksiz yere 50 ayrı istek gönderilmesine sebep oluyordu.
