@@ -11,8 +11,7 @@ interface GameData {
   unlockedLevels: number[];
 }
 
-// In-memory storage for demo (in production, use a database)
-// In-memory storage for demo (in production, use a database)
+
 const gameData: GameData = {
   cards: [...INITIAL_CARDS],
   energy: 100,
@@ -22,7 +21,7 @@ const gameData: GameData = {
   unlockedLevels: [1, 2, 3]
 };
 
-// Configuration
+
 const PROGRESS_PER_CLICK = 2;
 const ENERGY_PER_CLICK = 1;
 
@@ -41,7 +40,6 @@ export async function POST(request: NextRequest) {
   try {
     const body: ProgressRequest = await request.json();
     
-    // Input validation
     if (!body.cardId || typeof body.cardId !== 'string') {
       return NextResponse.json(
         { error: 'Invalid card ID' },
@@ -49,10 +47,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Update energy regeneration
+    
     updateEnergyRegeneration();
 
-    // Check energy
     if (gameData.energy < ENERGY_PER_CLICK) {
       return NextResponse.json(
         { error: 'Insufficient energy' },
@@ -60,7 +57,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Find the card
+    
     const cardIndex = gameData.cards.findIndex(c => c.id === body.cardId);
     if (cardIndex === -1) {
       return NextResponse.json(
@@ -71,7 +68,7 @@ export async function POST(request: NextRequest) {
 
     const card = gameData.cards[cardIndex];
 
-    // Validate card state
+    
     if (!card.unlocked) {
       return NextResponse.json(
         { error: 'Card is locked' },
@@ -86,29 +83,29 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Apply progress
+    
     const newProgress = Math.min(card.maxProgress, card.progress + PROGRESS_PER_CLICK);
     const leveledUp = newProgress >= card.maxProgress && card.progress < card.maxProgress;
     
-    // Update game state
+    
     gameData.energy -= ENERGY_PER_CLICK;
     gameData.cards[cardIndex].progress = newProgress;
     
     let unlockedCards: string[] = [];
     let newLevel: number | undefined;
 
-    // Handle level up
+    
     if (leveledUp) {
       newLevel = card.level + 1;
       
-      // Find cards that should be unlocked
+    
       const cardsToUnlock = gameData.cards.filter(c => 
         c.requiredCardId === card.id && !c.unlocked
       );
       
       unlockedCards = cardsToUnlock.map(c => c.id);
       
-      // Unlock cards
+      
       cardsToUnlock.forEach(c => {
         const unlockIndex = gameData.cards.findIndex(uc => uc.id === c.id);
         if (unlockIndex !== -1) {
@@ -116,7 +113,7 @@ export async function POST(request: NextRequest) {
         }
       });
       
-      // Check if new level should be unlocked
+      
       const maxLevel = Math.max(...cardsToUnlock.map(c => c.level));
       if (maxLevel > 0 && !gameData.unlockedLevels.includes(maxLevel)) {
         gameData.unlockedLevels.push(maxLevel);
