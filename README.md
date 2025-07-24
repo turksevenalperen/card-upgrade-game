@@ -239,7 +239,7 @@ flex-col lg:flex-row /* Mobile vertical, desktop horizontal */
 
 
 ### Batch Upgrade Sistemi
-*[Screenshot placeholder - 50x upgrade butonu]*
+
 <img width="241" height="309" alt="image" src="https://github.com/user-attachments/assets/e9efaf01-41ae-44d0-bf8d-3bc6ec37cbdf" />
 <img width="261" height="289" alt="image" src="https://github.com/user-attachments/assets/05ac0804-0342-4ff8-b7ac-6248b5349327" />
 
