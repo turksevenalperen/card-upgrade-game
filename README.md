@@ -233,7 +233,7 @@ flex-col lg:flex-row /* Mobile vertical, desktop horizontal */
 
 
 ### Item Showcase Sayfası  
-*[Screenshot placeholder - Kategorize item listesi]*
+
 <img width="1920" height="609" alt="image" src="https://github.com/user-attachments/assets/9c36c6c5-0fc2-4b39-b3a3-b359d0d56e53" />
 <img width="1887" height="813" alt="image" src="https://github.com/user-attachments/assets/f2e41926-4c37-4bee-82e2-dea888a501a0" />
 
