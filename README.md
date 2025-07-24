@@ -33,6 +33,27 @@ Bu proje, No Surrender Studio için hazırlanmış bir case study çalışmasıd
 ##  **Getirilen Yenilikler**
 
 ### **1. Batch Processing Sistemi - "50 Tıklama" Probleminin Çözümü**
+Tek Tek Tıklama Probleminin Teknik Çözümü
+Problem:
+Kullanıcılar bir kartı seviye atlatmak için 50 kez “Geliştir” butonuna tıklamak zorunda kalıyordu. Bu, hem kullanıcı deneyimini olumsuz etkiliyor hem de sunucuya gereksiz yere 50 ayrı istek gönderilmesine sebep oluyordu.
+
+Çözüm:
+Tek API çağrısı ile çoklu yükseltme (batch upgrade) sistemi geliştirildi.
+
+Kullanıcı, 1x, 5x, 10x, 25x, 50x gibi toplu yükseltme seçeneklerinden birini seçebiliyor.
+Seçilen miktar kadar enerji ve progress tek seferde hesaplanıyor.
+Sunucuya sadece bir POST isteği gönderiliyor ve tüm işlem backend’de tek seferde işleniyor.
+Sunucu tarafında, istek validasyonu ve rate limiting ile güvenlik sağlanıyor.
+Teknik Detaylar:
+Frontend: Kullanıcı arayüzünde, toplu yükseltme butonları ile clicks parametresi belirleniyor.
+Backend: /api/cards/batch-upgrade endpoint’i, gelen clicks parametresiyle toplu progress ve enerji hesaplamasını yapıyor.
+Validasyon: Maksimum 50 tıklama sınırı, enerji yeterliliği ve kartın mevcut durumu kontrol ediliyor.
+Yanıt: Tek seferde yeni progress, kalan enerji ve varsa açılan yeni kartlar dönülüyor.
+Kod Akışı:
+Sonuç:
+Kullanıcı, tek tıklama ile 50’ye kadar yükseltme yapabiliyor.
+Sunucuya sadece 1 istek gidiyor, gereksiz yük ortadan kalkıyor.
+Mobilde ve düşük bağlantıda bile hızlı ve akıcı deneyim sağlanıyor.
 
 **Problem:** Geleneksel kart oyunlarında tek tek tıklama zorunluluğu
 **Çözüm:** 1x, 5x, 10x, 25x, 50x toplu yükseltme sistemi
