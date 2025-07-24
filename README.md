@@ -225,7 +225,7 @@ flex-col lg:flex-row /* Mobile vertical, desktop horizontal */
 ## � **Ekran Görüntüleri**
 
 ### Ana Oyun Ekranı
-*[Screenshot placeholder - Ana sayfa ile oyun arayüzü]*
+
 <img width="1919" height="722" alt="image" src="https://github.com/user-attachments/assets/75ec0e71-c852-40f8-ac24-ca884d7f6cec" />
 <img width="1918" height="804" alt="image" src="https://github.com/user-attachments/assets/f8841a0c-5d26-4d06-bcb6-c1f78b8df847" />
 
